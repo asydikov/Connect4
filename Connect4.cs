@@ -19,6 +19,7 @@ namespace Connect4
         public static List<int> Start(string board)
         {
             TwoDimentionalBoard = new char[RowsCount][];
+
             WinColumns = new List<int>();
 
             ParseBoardFromString(board);
@@ -177,7 +178,6 @@ namespace Connect4
             {
                 coinsAmount.Add(coinIndexToAdd);
             }
-
         }
 
         static bool IsRowIndexInArrayRange(int index) => index < RowsCount && index > -1;
